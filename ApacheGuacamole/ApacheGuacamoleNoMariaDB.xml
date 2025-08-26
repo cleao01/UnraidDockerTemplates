@@ -21,8 +21,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1756218044</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Donate To Author</DonateText>
+  <DonateLink>IBAN:PT50 0033 0000 3198 0006 7600 6</DonateLink>
   <Requires/>
   <Config Name="Web Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8086</Config>
   <Config Name="OPT_MYSQL" Target="OPT_MYSQL" Default="Y" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Y</Config>
