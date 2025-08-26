@@ -31,7 +31,7 @@
   <Config Name="OPT_DUO" Target="OPT_DUO" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
   <Config Name="OPT_CAS" Target="OPT_CAS" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
   <Config Name="OPT_TOTP" Target="OPT_TOTP" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
-  <Config Name="OPT_QUICKCONNECT" Target="OPT_QUICKCONNECT" Default="N" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">N</Config>
+  <Config Name="OPT_QUICKCONNECT" Target="OPT_QUICKCONNECT" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
   <Config Name="OPT_HEADER" Target="OPT_HEADER" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
   <Config Name=" OPT_SAML" Target=" OPT_SAML" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/ApacheGuacamoleNoMariaDB" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ApacheGuacamoleNoMariaDB</Config>
