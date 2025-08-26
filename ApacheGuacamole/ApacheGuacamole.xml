@@ -16,7 +16,7 @@
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8086]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/cleao01/docker-guacamole/blob/0aa2a7522005f4d1b81e639b334cdc8c577b6959/GuacaIcon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/cleao01/docker-guacamole/master/GuacaIcon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
