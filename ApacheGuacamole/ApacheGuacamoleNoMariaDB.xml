@@ -35,5 +35,8 @@
   <Config Name="OPT_HEADER" Target="OPT_HEADER" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
   <Config Name=" OPT_SAML" Target=" OPT_SAML" Default="N" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/ApacheGuacamoleNoMariaDB" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ApacheGuacamoleNoMariaDB</Config>
+  <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>  
   <TailscaleStateDir/>
+
 </Container>
