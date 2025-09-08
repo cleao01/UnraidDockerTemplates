@@ -1,2 +1,2 @@
 # UnraidDockerTemplates
-Templates xml para publicar docker's em Community Applications
+Templates xml for Unraid docker's Community Applications
