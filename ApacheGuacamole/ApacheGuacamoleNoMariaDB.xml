@@ -14,7 +14,7 @@
     /config : this path is where Apache Guacamole will store it's properties files and extensions.&#xD;
     Initial username and password are guacadmin</Overview>
   <Category>Productivity:</Category>
-  <WebUI>http://[IP]:[PORT:8086]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/cleao01/docker-guacamole/master/GuacaIcon.png</Icon>
   <ExtraParams/>
@@ -40,3 +40,4 @@
   <TailscaleStateDir/>
 
 </Container>
+
