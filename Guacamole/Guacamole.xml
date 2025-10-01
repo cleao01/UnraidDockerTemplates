@@ -44,7 +44,6 @@ Initial username and password are guacadmin.</Overview>
   <Config Name="SSL_AUTH_URI" Target="SSL_AUTH_URI" Default="" Mode="" Description="SSL auth uri" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="SSL_AUTH_PRIMARY_URI" Target="SSL_AUTH_PRIMARY_URI" Default="" Mode="" Description="SSL auth primary uri" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="JSON_SECRET_KEY" Target="JSON_SECRET_KEY" Default="" Mode="" Description="JSON secret key" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Directory for recording storage" Target="RECORDING_SEARCH_PATH" Default="/config/recordings" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config/recordings</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/guacamole" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/guacamole</Config>
   <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
