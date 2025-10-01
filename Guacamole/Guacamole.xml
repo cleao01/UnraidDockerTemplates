@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Guacamole</Name>
+  <Repository>cleao/guacamole:1.0.0</Repository>
+  <Registry>https://registry.hub.docker.com/r/cleao/guacamole</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/193091-apache-guacamole</Support>
+  <Project>https://github.com/cleao01/UnraidDockerGuacamole</Project>
+  <Overview>Clientless remote desktop gateway. Supports standard protocols like VNC and RDP. Uses internal MariaDB or external database source authentication and data storage.&#xD;
+Initial username and password are guacadmin.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/cleao01/docker-guacamole/master/GuacaIcon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1759248587</DateInstalled>
+  <DonateText>Donate To Author</DonateText>
+  <DonateLink>IBAN:PT50 0033 0000 3198 0006 7600 6</DonateLink>
+  <Requires/>
+  <Config Name="Web Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="External authentication provider(s)" Target="EXTENSION_PRIORITY" Default="" Mode="" Description="Comma-separated list of external database server (mysql, sqlserver or postgresql) and authentication providers (ldap, duo, totp, cas, openid, saml, ssl, json, header, quickconnect) that should be acessed in specific order.&#13;&#10;Use internal (MariaDB) if any external database chosen" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DATABASE_HOSTNAME:PORT" Target="DATABASE_HOSTNAME" Default="" Mode="" Description="External database server name or IP adress, and port" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DATABASE_NAME" Target="DATABASE_NAME" Default="" Mode="" Description="External database name" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DATABASE_USERNAME" Target="DATABASE_USERNAME" Default="" Mode="" Description="External database user name" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DATABASE_PASSWORD" Target="DATABASE_PASSWORD" Default="" Mode="" Description="External database password" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="LDAP_HOSTNAME:PORT" Target="LDAP_HOSTNAME" Default="" Mode="" Description="External LDAP server name or IP adress, and port" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="LDAP_USER_BASE_DN" Target="LDAP_USER_BASE_DN" Default="" Mode="" Description="External LDAP user base dn" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DUO_API_HOSTNAME" Target="DUO_API_HOSTNAME" Default="" Mode="" Description="External duo api hostname" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DUO_CLIENT_ID" Target="DUO_CLIENT_ID" Default="" Mode="" Description="External duo client id" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DUO_CLIENT_SECRET" Target="DUO_CLIENT_SECRET" Default="" Mode="" Description="External duo client secret" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DUO_REDIRECT_URI" Target="DUO_REDIRECT_URI" Default="" Mode="" Description="External duo client uri" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="CAS_AUTHORIZATION_ENDPOINT" Target="CAS_AUTHORIZATION_ENDPOINT" Default="" Mode="" Description="CAS authorization endpoint" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="CAS_REDIRECT_URI" Target="CAS_REDIRECT_URI" Default="" Mode="" Description="CAS redirect uri" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OPENID_AUTHORIZATION_ENDPOINT" Target="OPENID_AUTHORIZATION_ENDPOINT" Default="" Mode="" Description="OPENID authorization endpoint" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OPENID_JWKS_ENDPOINT" Target="OPENID_JWKS_ENDPOINT" Default="" Mode="" Description="OPENID jwks endpoint" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OPENID_ISSUER" Target="OPENID_ISSUER" Default="" Mode="" Description="OPENID  issuer" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OPENID_CLIENT_ID" Target="OPENID_CLIENT_ID" Default="" Mode="" Description="OPENID client id" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OPENID_REDIRECT_URI" Target="OPENID_REDIRECT_URI" Default="" Mode="" Description="OPENID redirect uri" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SSL_AUTH_URI" Target="SSL_AUTH_URI" Default="" Mode="" Description="SSL auth uri" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SSL_AUTH_PRIMARY_URI" Target="SSL_AUTH_PRIMARY_URI" Default="" Mode="" Description="SSL auth primary uri" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="JSON_SECRET_KEY" Target="JSON_SECRET_KEY" Default="" Mode="" Description="JSON secret key" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Directory for recording storage" Target="RECORDING_SEARCH_PATH" Default="/config/recordings" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config/recordings</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/guacamole" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/guacamole</Config>
+  <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <TailscaleStateDir/>
+</Container>
