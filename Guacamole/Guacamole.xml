@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Guacamole</Name>
-  <Repository>cleao/guacamole:1.0.0</Repository>
+  <Repository>cleao/guacamole</Repository>
   <Registry>https://registry.hub.docker.com/r/cleao/guacamole</Registry>
   <Network>bridge</Network>
   <MyIP/>
